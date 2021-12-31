@@ -757,6 +757,7 @@ do
 				ImageColor3 = themes.LightContrast,
 				ScaleType = Enum.ScaleType.Slice,
 				SliceCenter = Rect.new(2, 2, 298, 298)
+                ImageColor3 = Color3.fromRGB(20,150,20)
 			}, {
 				utility:Create("ImageLabel", {
 					Name = "Frame",
