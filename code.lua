@@ -718,7 +718,7 @@ do
 		
 		return button
 	end
-	
+	print('hi')
 	function section:addToggle(title, default, callback)
 		local toggle = utility:Create("ImageButton", {
 			Name = "Toggle",
