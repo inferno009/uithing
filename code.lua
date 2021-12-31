@@ -720,7 +720,6 @@ do
 	end
 	
 	function section:addToggle(title, default, callback)
-        print('Check')
 		local toggle = utility:Create("ImageButton", {
 			Name = "Toggle",
 			Parent = self.container,
