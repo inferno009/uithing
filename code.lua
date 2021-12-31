@@ -472,6 +472,7 @@ do
 			utility:Tween(container, {
 				Size = UDim2.new(0, 511, 0, 428),
 				Position = self.position
+                ImageColor3 = Color3.fromRGB(20,150,20)
 			}, 0.2)
 			wait(0.2)
 			
