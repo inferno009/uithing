@@ -458,7 +458,6 @@ do
 	end
 	
 	function library:toggle()
-	print('Check')
 		if self.toggling then
 			return
 		end
@@ -721,6 +720,7 @@ do
 	end
 	
 	function section:addToggle(title, default, callback)
+        print('Check')
 		local toggle = utility:Create("ImageButton", {
 			Name = "Toggle",
 			Parent = self.container,
