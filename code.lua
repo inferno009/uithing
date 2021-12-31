@@ -458,6 +458,7 @@ do
 	end
 	
 	function library:toggle()
+	
 		if self.toggling then
 			return
 		end
@@ -471,7 +472,6 @@ do
 			utility:Tween(container, {
 				Size = UDim2.new(0, 511, 0, 428),
 				Position = self.position
-                ImageColor3 = Color3.fromRGB(20,150,20)
 			}, 0.2)
 			wait(0.2)
 			
@@ -718,7 +718,7 @@ do
 		
 		return button
 	end
-	print('hi')
+	
 	function section:addToggle(title, default, callback)
 		local toggle = utility:Create("ImageButton", {
 			Name = "Toggle",
@@ -728,7 +728,7 @@ do
 			Size = UDim2.new(1, 0, 0, 30),
 			ZIndex = 2,
 			Image = "rbxassetid://5028857472",
-			ImageColor3 = Color3.fromRGB(20,150,20),
+			ImageColor3 = themes.DarkContrast,
 			ScaleType = Enum.ScaleType.Slice,
 			SliceCenter = Rect.new(2, 2, 298, 298)
 		},{
@@ -757,7 +757,6 @@ do
 				ImageColor3 = themes.LightContrast,
 				ScaleType = Enum.ScaleType.Slice,
 				SliceCenter = Rect.new(2, 2, 298, 298)
-                ImageColor3 = Color3.fromRGB(20,150,20)
 			}, {
 				utility:Create("ImageLabel", {
 					Name = "Frame",
