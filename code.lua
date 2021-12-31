@@ -458,7 +458,7 @@ do
 	end
 	
 	function library:toggle()
-	
+	print('Check')
 		if self.toggling then
 			return
 		end
